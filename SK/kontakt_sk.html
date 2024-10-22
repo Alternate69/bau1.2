@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="kontakt.css">
+    <script src="https://kit.fontawesome.com/bb8769d3b3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="x-icon" href="obrazky/BAU PROFESSIONAL ultra transparent.png">
+    <title>BAU professional/menu</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="menu_sk.html"><img src="obrazky/BAU PROFESSIONAL mini ultra se.png" class="logo" alt="" ></a></div>
+            <ul class="links">
+                <li><a href="praca.html">Ponuka prác</a></li>
+                <li><a href="info.html">Informácie pre firmy</a></li>
+                <li><a href="kontakt_sk.html">Kontakty</a></li>
+                <li><a href="#">Požičanie auta</a></li>
+            </ul>
+            <a href="#" class="action_btn">Chcem prácu</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="praca.html">Ponuka prác</a></li>
+            <li><a href="info.html">Informácie pre firmy</a></li>
+            <li><a href="kontakt_sk.html">Kontakty</a></li>
+            <li><a href="#">Požičanie auta</a></li>
+            <li><a href="#" class="action_btn">Chcem prácu</a></li>
+        </div>
+    </header>
+    <main>
+        <div class="hero_kontakt">
+         <div class="nadpis1"><h1>Kontaktujte Nás</h1></div>
+        </div>
+        <div class="kontakty">
+            <a href="mailto:info@bauprofessional.eu?subject=Otázka"><p><i class="fa-solid fa-envelope"></i> Mail: info@bau.eu</p></a>
+            <a href="tel:+421 915 855 890"><p><i class="fa-solid fa-phone"></i> Telefón: +421 915 855 890</p></a>
+        </div>
+        
+
+        <div class="hero_navstivit">  
+            <div class="nadpis2"><h1>Navštívte Nás</h1></div>
+        </div>
+        <div class="adresa"><p><i class="fa-solid fa-location-dot"></i> Haanova 46A, 851 04 Bratislava - <span>mestská časť Petržalka</span></p></div>
+        <div class="google"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.2286924431014!2d17.120640176611406!3d48.125112952028395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c890f14a6d0e1%3A0x256b6b07879f234e!2sHaanova%2046a%2C%20851%2004%20Petr%C5%BEalka!5e0!3m2!1ssk!2ssk!4v1708598492335!5m2!1ssk!2ssk" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+    
+    </main>
+    <footer>
+        <div class="footercontainer">
+            <div class="section1">
+                <h3>Kontaktujte Nás pomocou:</h3>
+                <a href="mailto:info@bauprofessional.eu?subject=Otázka"><p><i class="fa-solid fa-envelope"></i> Mail: info@bau.eu</p></a>
+                <a href="tel:+421 915 855 890"><p><i class="fa-solid fa-phone"></i> Telefón: +421 915 855 890</p></a>
+            </div>
+            <div class="sectionc">
+                <img src="obrazky/BAU PROFESSIONAL mini ultra se.png" alt="logofooterc">
+            </div>
+            <div class="section2">
+                <h3>BAU PROFESSIONAL <span>s. r. o.</span></h3>
+                <p><i class="fa-solid fa-location-dot"></i> Haanova 46A, 851 04 Bratislava<br> - <span>mestská časť Petržalka</span><br>
+                   IČO: 55 491 839<br>
+                   IČ DPH: SK2122014059</p>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <p>Copyright &copy;2023 Všetky práva vyhradené pre BAU PROFESSIONAL; Designed by: LGD X Devio</p>
+        </div>
+    </footer>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+toggleBtnIcon.classList = isOpen
+    ? 'fa-solid fa-xmark'
+    :'fa-solid fa-bars'
+}
+    </script>
+
+     
+</body>
+</html>
